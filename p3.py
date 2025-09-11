@@ -183,6 +183,7 @@ for i in range(1, 6):
     for j in range(i):
         print('*', end=' ')
     print()
+print()
 
 # 정사각형 만들기  --- 중첩으로 안해도 됨
 # *****
@@ -191,4 +192,6 @@ for i in range(1, 6):
 # *****
 # *****
 for i in range(1, 6):
-    print('*')
+    for j in range(1, 6):
+        print('*', end=' ')
+    print()
