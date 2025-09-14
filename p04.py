@@ -79,7 +79,7 @@ fruits = ['사과', '바나나', '오렌지', '바나나', '포도']
 fruits.remove('바나나')  # 처음 만나는 값 삭제
 print(fruits)  # ['사과', '오렌지', '바나나', '포도']
 
-removed = fruits.pop()
+removed = fruits.pop()  # 마지막 항 삭제
 print(removed)
 print(fruits)
 
