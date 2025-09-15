@@ -85,3 +85,5 @@ print()
 list.sort()                      # 리스트 정렬
 del list[4]
 print(list)
+
+# 트리 만들기?, 구구단?

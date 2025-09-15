@@ -1,5 +1,7 @@
-array = [1, 3, 6]
-a = len(array)
-mid = a // 2
-print(a)
-print(mid)
+x = 10
+y = 20
+print(f'x > y : {x > y}')
+print(f'x < y : {x < y}')
+print(f'x >= y : {x >= y}')
+print(f'x <= y : {x <= y}')
+print(f'x == y : {x == y}')

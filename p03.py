@@ -42,3 +42,28 @@ input().split()을 사용하면:
 '''
 fruit1, fruit2, fruit3 = input('과일 이름을 입력하세요: ').split()  # 입력란 생성
 print(fruit1, fruit2, fruit3, sep='-')  # 리스트 생성시 -로 구분
+
+# True / False
+x = 10
+y = 20
+
+print(f'x == y : {x == y}')  # False
+print(f'x != y : {x != y}')  # True
+print(f'x > y : {x > y}')    # False
+print(f'x < y : {x < y}')    # True
+print(f'x >= y : {x >= y}')  # False
+print(f'x <= y : {x <= y}')  # True
+
+# 논리 연산자
+print(True and True)  # True
+print(True and False)  # False
+print(False and True)  # False
+print(False and False)  # False
+
+print(True or True)  # True
+print(True or False)  # True
+print(False or True)  # True
+print(False or False)  # False
+
+print(f'not True : {not True}')
+print(f'not False : {not False}')  # ???

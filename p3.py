@@ -25,7 +25,7 @@ print(True or False)  # True
 print(False or True)  # True
 print(False or False)  # False
 
-print(f'not True : {not True}')
+print(f'not True : {not True}')----뭔소리야
 print(f'not False : {not False}')
 
 print(True and False or True)  # or로 인해 True  사칙연산과 비슷하게 계산
