@@ -89,4 +89,4 @@ print(list)
 # 트리 만들기?, 구구단?
 n = int(input())
 for i in range(1, n+1):
-    print('*' * i)          # ㅔ.3 트리만들기 있음.
+    print('*' * i)          # p3 트리만들기 / 실습 8에 구구단 있음. (8반복문에 등장)

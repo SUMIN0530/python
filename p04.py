@@ -15,7 +15,7 @@ str / list / tuple / range (list만 가변)
 '''
 
 # 리스트 변형 (형 변환 같은건가) --- 이터러블을 리스트로 변환  리스트는 []사용
-list1 = list()
+list1 = list()  # 빈 리스트 []과 동일
 list2 = list('Hello')
 
 print(list1)   # []
@@ -61,7 +61,7 @@ print('numbers 뒤집기', numbers[::-1])
 # [10, 40, 20, 40]으로 변경
 numbers = [10, 20, 30, 40]
 print('1. numbers', numbers)
-numbers[1:3] = [40, 20]
+numbers[1:3] = [40, 20]         # [40, 20, 30]으로 길이 변경도 가능
 print('2. numbers', numbers)
 
 # 인덱스 요소 삭제
@@ -90,20 +90,21 @@ print(fruits)
 fruits.clear()  # 모든 요소 삭제 (리스트 유지) != del
 print(fruits)
 
-# 리스트 연결 (+)
+# 리스트 연결 (+)----------문자열과 동일
 list2 = [1, 2, 3, 4, 5]
 list3 = [2, 3, 4, 5]
 
 result = list2 + list3
 print(result)
 
-# 리스트 반복 (*)
+# 리스트 반복 (*)----------문자열 동일
 result = list2 * 3
 print(result)
 
 # 리스트 포함 여부 (in / not in)
 print('1' in list2)  # False : 해당 1은 문자형
 print(1 in list2)  # True : 해당 1은 숫자형
+print(1 not in list2)  # False
 
 # 요소 추가 메서드
 numbers = [10, 21, 15, 22, 54]
@@ -126,13 +127,13 @@ print(numbers)
 # 요소 검색, 정렬 메서드
 numbers = [1, 2, 6, 9, 5, 3, 2, 4, 7]
 
-idx = numbers.index(6)  # 6 찾기
+idx = numbers.index(6)  # 6 찾기 --> 2
 print('idx: ', idx)
 
 idx = numbers.index(8)  # 8 없음 => 에러 발생
 print('idx: ', idx)
 
-count = numbers.count(2)  # 2가 몇 개 있냐
+count = numbers.count(2)  # 2가 몇 개 있냐 --> 2
 print('count: ', count)
 
 numbers.sort()  # 오름차순 (한글 영어는 자음, 알파벳 순)
@@ -160,3 +161,16 @@ print('min_mun: ', min_mun)
 
 sum_mun = sum(numbers)
 print('sum_mun: ', sum_mun)
+
+'''
+리스트 메서드와 함수의 차이점:
+1. 메서드 (append, extend, remove, pop, clear, sort 등):
+   - 리스트 객체에 직접 적용됨 (list.method())
+   - 대부분 원본 리스트를 직접 수정함
+   - 반환값이 None인 경우가 많음
+
+2. 함수 (sorted, max, min, sum 등):
+   - 리스트를 매개변수로 받음 (function(list))
+   - 원본 리스트를 변경하지 않음
+   - 결과값을 반환함
+'''
