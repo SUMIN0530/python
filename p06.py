@@ -94,7 +94,7 @@ print(colors)
 colors.discard('주황')
 print(colors)
 
-popped = colors.pop()
+popped = colors.pop()  # -------copy
 print(colors)
 print(popped)
 

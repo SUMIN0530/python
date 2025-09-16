@@ -1,4 +1,4 @@
-# 04.1.1 첫번째 요소와 마지막 요소 출력
+# 실습 04.1.1 첫번째 요소와 마지막 요소 출력
 nums = [10, 20, 30, 40, 50]
 print('f:', nums[:1], 'l:', nums[4:])
 # 리더님 : print(nums[0]) / print(nums[-1])
@@ -17,7 +17,7 @@ print('원소 두 배:', nums)
 '''
 리더님
 nums = [1, 2, 3, 4, 5]
-for i in range(5):    -------- for i in range(len(nums))
+for i in range(5):    -------- for i in range(len(nums)) or for i in nums
     nums[i] *= 2
 
 print('nums', nums)
@@ -51,7 +51,7 @@ data2 = data[3:6]
 data3 = data[6:]
 print('등분 후 역순 병렬:', data1[::-1], data2[::-1], data3[::-1])
 
-# 04.2.1 부분 삭제 후 연결
+# 실습 04.2.1 부분 삭제 후 연결
 fruits = ["apple", "banana", "cherry", "grape", "watermelon", "strawberry"]
 del fruits[1:4]
 print(fruits)
@@ -62,7 +62,7 @@ result = letters*3
 del result[2]
 print(result)
 
-# 04.3.1 기차 탑승 시뮬레이션
+# 실습 04.3.1 기차 탑승 시뮬레이션
 train = ['철수', '영희']            # 1. 철수와 영희 탑승
 train.extend(['민수', '지훈'])      # 2. 다음 역에서 민수와 지훈이 탑승
 del train[1]                        # 3. 다음 역에서 영희 하차
@@ -87,3 +87,6 @@ del list[4]
 print(list)
 
 # 트리 만들기?, 구구단?
+n = int(input())
+for i in range(1, n+1):
+    print('*' * i)          # ㅔ.3 트리만들기 있음.
