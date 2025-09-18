@@ -156,12 +156,54 @@ while code != secret_code:
 # 유효한 나이만 평균 내기
 times = 0
 sum_age = 0
-while times != 5:
+while times < 5:
     age = int(input('나이를 입력하세요:'))
-    if 0 < age < 120:
+    if 0 < age <= 120:
         times += 1
         sum_age += age
     else:
         continue
 a = sum_age / 5
-print(f'총 합: {sum_age}, 평균: {a}')
+print(f'총 합: {sum_age}, 평균: {a}')  # a:.0f => 값에 대해 소수점 나타내는 위치
+
+# 실습 03. 중첩 while문 연습 문제
+# 문제 1. 로그인 시스템 구현
+ID = 'rkawk'
+password = 'popipepa'
+ID = input('아이디를 입력하세요.')
+while ID != 'rkawk':
+    print('ID가 존재하지 않습니다.')
+    ID = input('아이디를 다시 입력하세요.')
+else:
+    password = input('비밀번호를 입력해주세요.')
+    while ID == 'rkawk':
+        if password == 'popipepa':
+            print('로그인 성공!')
+            break
+        while password != 'popipepa':
+            password = input('틀렸습니다. 비밀번호를 다시 입력해주세요.')
+
+
+'''
+리더님
+id = 'admin'
+pw = 'admin123'
+
+input_id = ' '
+input_pw = ' '
+
+while True:
+    input_id = input('아이디 입력')
+
+    if id == input_id:
+        while True:
+            input_pw = input('pw를 입력하세요')
+            if pw == input_pw:
+                print('로그인 성공')
+                break #pw while문 탈출
+            else:
+                print('비밀번호가 틀렸습니다.')
+        break # id while문 탈출
+    else:
+        print('ID가 존재하지 않습니다.')
+'''

@@ -180,3 +180,23 @@ while i < 15:
         print()
     else:
         print('정상 종료 되었습니다.')
+
+# 이 위치가 맞는지 모르겠네
+# 이중 for문 - 구구단
+for i in range(2, 10):
+    print(f'==={i}단===')
+    for j in range(1, 10):
+        print(f'{i} X {j} = {i * j}')
+    print()
+print()
+
+# 이중 while문
+i = 2  # 초기값
+while i < 10:
+    j = 1  # 초기값
+    print(f'==={i}단===')
+    while j < 10:
+        print(f'{i} X {j} = {i * j}')
+        j += 1  # 수 증가
+    print()
+    i += 1  # 단 증가

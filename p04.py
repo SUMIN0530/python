@@ -15,7 +15,7 @@ str / list / tuple / range (list만 가변)
 '''
 
 # 리스트 변형 (형 변환 같은건가) --- 이터러블을 리스트로 변환  리스트는 []사용
-list1 = list()  # 빈 리스트 []과 동일
+list1 = list()  # 빈 리스트 []과 동일 / 빈 문자열 " " or ' '로 생성 가능
 list2 = list('Hello')
 
 print(list1)   # []
