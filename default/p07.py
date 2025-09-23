@@ -54,7 +54,7 @@ dict_from_pairs = dict(pairs)
 print('dict_from_pairs', dict_from_pairs)
 
 # zip()를 이용한 생성
-keys = ['name', 'age', 'city']
+keys = ['name', 'age', 'city']  # {} 사용 시 순서 무작위
 values = ['박민수', 21, '대전']
 
 person3 = dict(zip(keys, values))

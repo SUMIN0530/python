@@ -21,6 +21,7 @@ print(calculate(2, 3, '*'))
 print(calculate(2, 3, '/'))
 print(calculate(2, 3, '//'))
 
+# ==============================================
 # 실습 02. 가변인자 연습하기
 # *args 연습
 # 문제 1. 숫자를 받아 평균 구하기
@@ -64,3 +65,46 @@ def price(**kwargs):
 
 
 price(apple=20, peach=30, orenge=15)
+
+# ==============================================
+# 실습 03. 전역 변수 연습하기
+
+current_user = ''
+
+
+def login(ID):
+    global current_user
+    if current_user == '':
+        current_user = ID
+        print(f'{ID}님이 로그인 하셨습니다.')
+    else:
+        print('이미 로그인되어 있습니다.')
+
+
+def logout():
+    global current_user
+    current_user = ''
+    print('로그아웃 하셨습니다.')
+
+
+login('rkawk')
+login('qhrtbd')
+logout()
+login('qhrtbd')
+print(current_user)
+
+# ============================================
+# 실습 04. 거듭제곱
+# a**b = a * (a**(b-1))
+
+
+def sq(a, b):
+    if b == 0:
+        return 1
+    return a * sq(a, b-1)
+
+
+print(sq(2, 7))
+
+# ==========================================
+# 실습 05. 팩토리얼(Factorial)
