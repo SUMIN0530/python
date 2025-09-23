@@ -186,8 +186,8 @@ s1.score = 80
 # print(s1.get_score())
 print(s1.score)
 # s1.set_score(120)
-s1.score = 120
-print(s1.score)
+# s1.score = 120
+# print(s1.score)
 
 
 # 실습 04. 상송과 오버라이딩 연습
