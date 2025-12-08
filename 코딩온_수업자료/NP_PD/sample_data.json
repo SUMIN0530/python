@@ -1,0 +1,20 @@
+[
+  {
+    "name":"John",
+    "age":25,
+    "\ub3c4\uc2dc":"\uc11c\uc6b8",
+    "Salary":50000
+  },
+  {
+    "name":"Jane",
+    "age":30,
+    "\ub3c4\uc2dc":"\ubd80\uc0b0",
+    "Salary":60000
+  },
+  {
+    "name":"Park",
+    "age":35,
+    "\ub3c4\uc2dc":"\ub300\uad6c",
+    "Salary":55000
+  }
+]
